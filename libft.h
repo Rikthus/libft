@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maxperei <maxperei@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: sap <sap@student.42lyon.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:46:26 by maxperei          #+#    #+#             */
-/*   Updated: 2021/12/13 10:29:04 by maxperei         ###   ########lyon.fr   */
+/*   Updated: 2022/01/26 14:13:01 by sap              ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>
+# include <math.h>
 
 typedef struct s_list
 {
@@ -74,5 +75,13 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+//GET_NEXT_LINE
+# ifndef  BUFFER_SIZE
+#  define   BUFFER_SIZE 1024
+# endif
+
+char	*get_next_line(int fd);
+char	*ft_strjoin_n(char *line, char *buf);
 
 #endif
