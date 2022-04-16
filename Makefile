@@ -4,7 +4,7 @@ CFLAGS = -Wall -Werror -Wextra
 AR = ar
 ARFLAGS = rcs
 
-INCS = libft.h
+INCS = libft.h 
 
 SRCS =	ft_atoi.c			\
 		ft_bzero.c			\
@@ -51,7 +51,20 @@ SRCS =	ft_atoi.c			\
 		ft_toupper.c		\
 		ft_striteri.c		\
 		get_next_line.c		\
-		get_next_line_utils.c	
+		get_next_line_utils.c	\
+		ft_printf.c			\
+		ft_search_type.c	\
+		ft_print_bighex.c	\
+		ft_print_char.c		\
+		ft_print_decimal.c	\
+		ft_print_integer.c	\
+		ft_print_pointer.c	\
+		ft_print_smallhex.c	\
+		ft_print_string.c	\
+		ft_print_unsigned.c	\
+		ft_putchar.c		\
+		ft_putstr.c			\
+		ft_nbrlen.c			\
 
 OBJS = $(SRCS:.c=.o)
 

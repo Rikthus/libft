@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sap <sap@student.42lyon.fr>                +#+  +:+       +#+        */
+/*   By: tulipe <tulipe@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:46:26 by maxperei          #+#    #+#             */
-/*   Updated: 2022/01/26 14:13:01 by sap              ###   ########lyon.fr   */
+/*   Updated: 2022/04/16 21:34:53 by tulipe           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 # define LIBFT_H
 
 # include <stdio.h>
-# include <unistd.h>
 # include <stdlib.h>
+# include <unistd.h>
+# include <stdarg.h>
 # include <limits.h>
 # include <math.h>
 
@@ -83,5 +84,25 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 char	*get_next_line(int fd);
 char	*ft_strjoin_n(char *line, char *buf);
+
+//FT_PRINTF
+
+int		ft_printf(const char *fmt, ...);
+int		ft_search_type(va_list ap, const char *fmt);
+
+int		ft_print_char(va_list ap);
+int		ft_print_string(va_list ap);
+int		ft_print_pointer(va_list ap);
+int		ft_print_decimal(va_list ap);
+int		ft_print_integer(va_list ap);
+int		ft_print_unsigned(va_list ap);
+int		ft_print_smallhex(va_list ap);
+int		ft_print_bighex(va_list ap);
+
+//NEW FT
+
+void	ft_putchar(char c);
+void	ft_putstr(char *str);
+int		ft_nbrlen(int nbr);
 
 #endif
