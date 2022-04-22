@@ -53,7 +53,7 @@ SRCS =	ft_atoi.c			\
 		get_next_line.c		\
 		get_next_line_utils.c	\
 		ft_printf.c			\
-		ft_search_type.c	\
+		ft_printf_search_type.c	\
 		ft_print_bighex.c	\
 		ft_print_char.c		\
 		ft_print_decimal.c	\
