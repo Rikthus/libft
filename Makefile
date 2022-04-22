@@ -4,7 +4,7 @@ CFLAGS = -Wall -Werror -Wextra
 AR = ar
 ARFLAGS = rcs
 
-INCS = libft.h 
+INCS = libft.h
 
 SRCS =	ft_atoi.c			\
 		ft_bzero.c			\
@@ -42,6 +42,7 @@ SRCS =	ft_atoi.c			\
 		ft_strlcpy.c		\
 		ft_strlen.c			\
 		ft_strmapi.c		\
+		ft_strcmp.c			\
 		ft_strncmp.c		\
 		ft_strnstr.c		\
 		ft_strrchr.c		\

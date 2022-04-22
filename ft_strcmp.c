@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maxperei <maxperei@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/16 21:35:16 by tulipe            #+#    #+#             */
-/*   Updated: 2022/04/22 20:25:08 by maxperei         ###   ########lyon.fr   */
+/*   Created: 2022/04/22 20:23:46 by maxperei          #+#    #+#             */
+/*   Updated: 2022/04/22 20:24:10 by maxperei         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char *str)
+int	ft_strcmp(char *s1, char *s2)
 {
-	write(1, str, ft_strlen(str));
+	int	i;
+
+	i = 0;
+	while ((s1[i] || s2[i]) && s1[i] == s2[i])
+		i++;
+	return (s1[i] - s2[i]);
 }
